@@ -1,8 +1,10 @@
 #ifndef _EEPROM_H
 #define _EEPROM_H
 
+#define EEPROM_WRITE_PAGE 1
 #define EEPROM_RW_DELAY 10
-#define EEPROM_PAGE_SIZE 16
+#define EEPROM_PAGE_SIZE 64
+#define EEPROM_BLOCK_SIZE 16
 #include <Wire.h>
 
 class EEPROM_EX{

@@ -1,6 +1,8 @@
 #ifndef _CONFIG_H
 #define _CONFIG_H
 
+#define FIRMWARE_VERSION "0.0.1"
+
 #ifndef SDA 
 #define SDA     4
 #endif 
@@ -39,6 +41,7 @@ static char ntpServer[100] = "pool.ntp.org";
 
 #define AP_WEBCONFIG_NAME   "ESP-"
 #define AP_WEBCONFIG_PASSWORD "88888888"
+
 #include "src/debug.h"
 #endif
 

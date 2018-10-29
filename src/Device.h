@@ -5,11 +5,17 @@
 #define DEVICE_ID_MIN       1000000
 #define DEVICE_ID_MAX       9999999
 
+
+#define DEVICE_DATA_ADDR        0
+#define DEVICE_DATA_SIGNATURE_ADDR   DEVICE_DATA_ADDR 
+#define DEVICE_DATA_SERIALNO_ADDR    (DEVICE_DATA_ADDR+1)
+#define DEVICE_DATA_CONFIG_ADDR      64  
+
 struct DeviceConfig{
     char WifiSsid [64];
     char WifiPassword [64];
-    char ServerAddress[32];
     char DeviceName[32];
+    char ServerAddress[128];
 };
 
 class DeviceClass{
